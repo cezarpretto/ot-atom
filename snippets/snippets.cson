@@ -1,0 +1,67 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# https://atom.io/docs/latest/using-atom-basic-customization#cson
+
+'.text.html':
+   'OT Header':
+     'prefix': 'otheader'
+     'body': '<ot-header ot-titulo="$1" ot-icone="$2"></ot-header>'
+   'OT Password':
+     'prefix': 'otpassword'
+     'body': '<ot-password ng-model="$1"></ot-password>'
+   'OT Html':
+     'prefix': 'othtml'
+     'body': '''
+      <ot-header ot-titulo="$1" ot-icone="$2"></ot-header>
+      <div class="row">
+        <div class="$3">
+
+        </div>
+      </div>$4
+     '''
+
+# '.source.js':
+#    'Growl Success':
+#      'prefix': 'grosu'
+#      'body': 'growl.success(\'$1\', {ttl: 4000});'
+#    'Growl Error':
+#      'prefix': 'groer'
+#      'body': 'growl.error(\'$1\');'
+#    'Growl Warning':
+#      'prefix': 'growa'
+#      'body': 'growl.warning(\'$1\', {ttl: 4000});'
+#    'Growl Info':
+#      'prefix': 'groin'
+#      'body': 'growl.info(\'$1\', {ttl: 4000});'
+
+'.source.js':
+   'Ot Growl Success':
+     'prefix': 'grosu'
+     'body': 'otGrowl.success(\'$1\', {ttl: -1}, {detail: $2});'
+   'Ot Growl Error':
+     'prefix': 'groer'
+     'body': 'otGrowl.error(\'$1\', {ttl: -1}, {detail: $2});'
+   'Ot Growl Warning':
+     'prefix': 'growa'
+     'body': 'otGrowl.warning(\'$1\', {ttl: -1}, {detail: $2});'
+   'Ot Growl Info':
+     'prefix': 'groin'
+     'body': 'otGrowl.info(\'$1\', {ttl: -1}, {detail: $2});'

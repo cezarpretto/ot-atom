@@ -1,8 +1,8 @@
 {
   "name": "ot-atom",
   "main": "./lib/ot-atom",
-  "version": "0.0.0",
-  "description": "A short description of your package",
+  "version": "0.0.1",
+  "description": "A Snippet package for the Office Tools Project.",
   "keywords": [
   ],
   "activationCommands": {

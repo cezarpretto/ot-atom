@@ -10,10 +10,10 @@
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'ot-atom'
+      'label': 'Ot Atom Options'
       'submenu': [
         {
-          'label': 'Toggle'
+          'label': 'Em breve...'
           'command': 'ot-atom:toggle'
         }
       ]

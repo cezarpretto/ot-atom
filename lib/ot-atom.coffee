@@ -27,7 +27,10 @@ module.exports = OtAtom =
   toggle: ->
     console.log 'OtAtom was toggled!'
 
-    if @modalPanel.isVisible()
-      @modalPanel.hide()
-    else
-      @modalPanel.show()
+    # if @modalPanel.isVisible()
+    #   @modalPanel.hide()
+    # else
+    #   @modalPanel.show()
+
+  teste: ->
+    console.log 'Funfou carai!!'
